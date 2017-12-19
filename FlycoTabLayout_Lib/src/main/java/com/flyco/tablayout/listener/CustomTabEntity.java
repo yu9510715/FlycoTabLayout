@@ -10,4 +10,8 @@ public interface CustomTabEntity {
 
     @DrawableRes
     int getTabUnselectedIcon();
+
+    String getTabSelectedStr();
+
+    String getTabUnSelectedStr();
 }

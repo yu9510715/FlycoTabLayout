@@ -6,6 +6,7 @@ public class TabEntity implements CustomTabEntity {
     public String title;
     public int selectedIcon;
     public int unSelectedIcon;
+    private String selectedIconStr, unSelectedIconStr;
 
     public TabEntity(String title, int selectedIcon, int unSelectedIcon) {
         this.title = title;
@@ -26,5 +27,15 @@ public class TabEntity implements CustomTabEntity {
     @Override
     public int getTabUnselectedIcon() {
         return unSelectedIcon;
+    }
+
+    @Override
+    public String getTabSelectedStr() {
+        return selectedIconStr;
+    }
+
+    @Override
+    public String getTabUnSelectedStr() {
+        return unSelectedIconStr;
     }
 }
